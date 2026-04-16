@@ -1,0 +1,233 @@
+/**
+ * WooCommerce Affiliate System — Admin Styles
+ *
+ * @package WooAffiliateByJ
+ */
+
+/* ==========================================================================
+   Admin Wrap
+   ========================================================================== */
+.wabj-admin-wrap {
+    max-width: 900px;
+    margin-top: 20px;
+}
+
+.wabj-admin-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 23px;
+    font-weight: 600;
+    color: #1d2327;
+    margin-bottom: 20px;
+}
+
+.wabj-admin-title .dashicons {
+    font-size: 28px;
+    width: 28px;
+    height: 28px;
+    color: #6366f1;
+}
+
+/* ==========================================================================
+   Admin Card
+   ========================================================================== */
+.wabj-admin-card {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 24px 28px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.wabj-admin-card h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1d2327;
+    margin: 0 0 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.wabj-admin-card .form-table th {
+    padding: 16px 12px 16px 0;
+    font-weight: 500;
+    color: #374151;
+}
+
+.wabj-admin-card .form-table td {
+    padding: 16px 12px;
+}
+
+.wabj-admin-card .form-table input[type="text"],
+.wabj-admin-card .form-table input[type="number"],
+.wabj-admin-card .form-table select {
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 14px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.wabj-admin-card .form-table input:focus,
+.wabj-admin-card .form-table select:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.12);
+    outline: none;
+}
+
+.wabj-admin-card .form-table .description {
+    color: #64748b;
+    font-size: 12px;
+    margin-top: 6px;
+}
+
+.wabj-admin-card .submit .button-primary {
+    background: #6366f1;
+    border-color: #6366f1;
+    border-radius: 8px;
+    padding: 6px 24px;
+    font-size: 14px;
+    font-weight: 600;
+    text-shadow: none;
+    box-shadow: 0 1px 2px rgba(99, 102, 241, 0.3);
+    transition: all 0.2s ease;
+}
+
+.wabj-admin-card .submit .button-primary:hover {
+    background: #4f46e5;
+    border-color: #4f46e5;
+    box-shadow: 0 4px 8px rgba(99, 102, 241, 0.25);
+    transform: translateY(-1px);
+}
+
+/* ==========================================================================
+   Status Badges (List Table)
+   ========================================================================== */
+.wabj-status-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 0.02em;
+}
+
+.wabj-badge-pending {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.wabj-badge-approved {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.wabj-badge-processed {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.wabj-badge-rejected {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+/* ==========================================================================
+   Action Buttons
+   ========================================================================== */
+.wabj-action-btn {
+    transition: all 0.15s ease !important;
+}
+
+.wabj-approve-btn {
+    color: #065f46 !important;
+    border-color: #6ee7b7 !important;
+    background: #ecfdf5 !important;
+}
+
+.wabj-approve-btn:hover {
+    background: #d1fae5 !important;
+    border-color: #34d399 !important;
+    transform: translateY(-1px);
+}
+
+.wabj-process-btn {
+    color: #15803d !important;
+    border-color: #86efac !important;
+    background: #f0fdf4 !important;
+}
+
+.wabj-process-btn:hover {
+    background: #dcfce7 !important;
+    border-color: #4ade80 !important;
+    transform: translateY(-1px);
+}
+
+.wabj-reject-btn {
+    color: #991b1b !important;
+    border-color: #fca5a5 !important;
+    background: #fef2f2 !important;
+}
+
+.wabj-reject-btn:hover {
+    background: #fee2e2 !important;
+    border-color: #f87171 !important;
+    transform: translateY(-1px);
+}
+
+/* ==========================================================================
+   List Table Enhancements
+   ========================================================================== */
+.wabj-admin-card .wp-list-table {
+    border: none;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.wabj-admin-card .wp-list-table thead th {
+    background: #f8fafc;
+    border-bottom: 2px solid #e2e8f0;
+    font-weight: 600;
+    color: #374151;
+    font-size: 13px;
+}
+
+.wabj-admin-card .wp-list-table tbody tr {
+    transition: background 0.15s ease;
+}
+
+.wabj-admin-card .wp-list-table tbody tr:hover {
+    background: #f8fafc;
+}
+
+.wabj-admin-card .wp-list-table td {
+    vertical-align: middle;
+    padding: 12px 10px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+/* Sub-navigation views */
+.wabj-admin-card .subsubsub {
+    margin-bottom: 12px;
+}
+
+.wabj-admin-card .subsubsub a.current {
+    color: #6366f1;
+    font-weight: 600;
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+@media (max-width: 782px) {
+    .wabj-admin-wrap {
+        max-width: 100%;
+    }
+
+    .wabj-admin-card {
+        padding: 16px;
+        border-radius: 8px;
+    }
+}
